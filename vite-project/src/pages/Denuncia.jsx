@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar"
-import { FaHome, FaTags } from "react-icons/fa";
-import { FaCircleQuestion } from "react-icons/fa6";
+import MenuLateral from "../components/MenuLateral";
+
 
 const Denuncia = () => {
     return (
@@ -8,11 +8,7 @@ const Denuncia = () => {
             <NavBar />
             <div className="grid grid-cols-6 w-[80vw] mx-auto">
                 <div className="grid col-span-1  border-r-2">
-                    <ul className="mt-5">
-                        <li className="flex items-center gap-2 font-roboto py-2 cursor-pointer hover:bg-gray-200 rounded-l-lg"><FaHome className="ml-4" /><span className="text-lg">Inicio</span></li>
-                        <li className="flex items-center gap-2 font-roboto py-2 cursor-pointer hover:bg-gray-200 rounded-l-lg"><FaCircleQuestion className="ml-4" /> <span className="text-lg">Perguntas</span></li>
-                        <li className="flex items-center gap-2 font-roboto py-2 cursor-pointer hover:bg-gray-200 rounded-l-lg"><FaTags className="ml-4" /> <span className="text-lg">Tags</span></li>
-                    </ul>
+                    <MenuLateral />
                 </div>
                 <div className="grid col-span-4 h-min w-[100%] mb-20">
                     <div className="mt-5 flex flex-col justify-center items-center">

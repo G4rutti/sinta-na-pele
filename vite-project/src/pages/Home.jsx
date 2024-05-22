@@ -1,9 +1,7 @@
-import { FaHome, FaTags, FaVideo} from "react-icons/fa";
-import { FaCircleQuestion } from "react-icons/fa6";
-
-
+import { Link } from "react-router-dom";
 import Badge from "../components/Badge";
 import Denuncia from "../components/Denuncia"
+import MenuLateral from "../components/MenuLateral";
 
 import NavBar from "../components/NavBar";
 
@@ -15,18 +13,13 @@ const Home = () => {
       <NavBar />
       <div className="grid grid-cols-6 w-[80vw] mx-auto">
         <div className="grid col-span-1  border-r-2">
-          <ul className="mt-5">
-            <li className="flex items-center gap-2 font-roboto py-2 cursor-pointer hover:bg-gray-200 rounded-l-lg"><FaHome className="ml-4" /><span className="text-lg">Inicio</span></li>
-            <li className="flex items-center gap-2 font-roboto py-2 cursor-pointer hover:bg-gray-200 rounded-l-lg"><FaCircleQuestion className="ml-4" /> <span className="text-lg">Perguntas</span></li>
-            <li className="flex items-center gap-2 font-roboto py-2 cursor-pointer hover:bg-gray-200 rounded-l-lg"><FaTags className="ml-4" /> <span className="text-lg">Tags</span></li>
-            <li className="flex items-center gap-2 font-roboto py-2 cursor-pointer hover:bg-gray-200 rounded-l-lg"><FaVideo className="ml-4" /> <span className="text-lg">Vídeos</span></li>
-          </ul>
+        <MenuLateral/>
         </div>
         <div className="grid col-span-4 h-min w-[100%]">
           <div className="mt-5 flex flex-col justify-center items-center">
             <div className="flex justify-center items-center gap-10 mb-10 pb-5 border-b w-[80%]">
               <h1 className="text-xl font-medium ">Veja as principais denúncias</h1>
-              <button className="rounded-md bg-teal-600 px-8 py-2 text-sm font-medium text-white shadow mx-auto">Faça uma denúncia</button>
+              <Link to="/create_complaint"><button className="rounded-md bg-teal-600 px-8 py-2 text-sm font-medium text-white shadow mx-auto">Faça uma denúncia</button></Link>
             </div>
             <div className=" flex flex-col items-center">
               <Denuncia texto="Sofri racismo no refeitório da empresa." nome="Jorge Augusto" badges={["Racismo", "Discriminação"]} respostas="1" visitas="53" />
@@ -36,9 +29,7 @@ const Home = () => {
               <Denuncia texto="Sofri agressão física na escola." nome="Lucas Almeida" badges={["Agressão", "Violência"]} respostas="13" visitas="355" />
               <Denuncia texto="Fui discriminada por ser mulher em um ambiente de trabalho masculino" nome="Julia Ferreira" badges={["Discriminação", "Preconceito"]} respostas="5" visitas="153" />
             </div>
-
           </div>
-
         </div>
         <div className="grid col-span-1 w-[15vw]">
           <div className="mt-5 ml-5">
