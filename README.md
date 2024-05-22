@@ -1,2 +1,4 @@
 # Como iniciar o projeto:
-1. `npm run dev`
+## Vá para o terminal: 
+1. `cd vite-project`
+2. `npm run dev`
