@@ -1,5 +1,6 @@
 import Badge from "./Badge"
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 
 
 const Denuncia = ({ texto, nome, badges, respostas, visitas }) => {
@@ -15,7 +16,7 @@ const Denuncia = ({ texto, nome, badges, respostas, visitas }) => {
             </div>
             <div className="grid col-span-3">
                 <div className="flex flex-col">
-                    <h1 className="text-xl">{texto}</h1>
+                    <Link to="/denuncia"><h1 className="text-xl underline text-blue-800 mb-4 cursor-pointer hover:text-gray-800 duration-100">{texto}</h1></Link>
                     <div className="grid grid-cols-2">
                         <div className="grid col-span-1">
                             <ul className="flex gap-2">
