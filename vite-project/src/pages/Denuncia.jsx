@@ -70,14 +70,6 @@ const Denuncia = () => {
                     </div>
 
                 </div>
-                <div className="grid col-span-1 w-[15vw]">
-                    <div className="mt-5 ml-5">
-                        <p className="mb-5 text-xl">Principais tags</p>
-
-                    </div>
-                </div>
-
-
             </div>
         </div>
     )
