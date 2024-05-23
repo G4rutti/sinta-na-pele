@@ -95,7 +95,7 @@ const SignUp = () => {
                             </div>
 
                             <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
-                                <Link to='/home'>
+                                <Link to='/create_complaint'>
                                     <button
                                         className="inline-block shrink-0 rounded-md border border-[#49686d] bg-[#7BABB2] px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
                                     >

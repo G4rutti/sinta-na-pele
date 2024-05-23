@@ -22,7 +22,7 @@ const Home = () => {
               <Link to="/create_complaint"><button className="rounded-md bg-teal-600 px-8 py-2 text-sm font-medium text-white shadow mx-auto">Faça uma denúncia</button></Link>
             </div>
             <div className=" flex flex-col items-center">
-              <Denuncia texto="Sofri racismo no refeitório da empresa." nome="Jorge Augusto" badges={["Racismo", "Discriminação"]} respostas="1" visitas="53" />
+              <Denuncia texto="Sofri racismo no refeitório da empresa." nome="Anônimo" badges={["Racismo", "Discriminação"]} respostas="1" visitas="53" />
               <Denuncia texto="Sofri assédio no transporte público." nome="Ana Carolina" badges={["Abuso", "Violência"]} respostas="6" visitas="52" />
               <Denuncia texto="Enfrentei mansplaining em uma reunião importante." nome="Mariana Silva" badges={["Mansplaning", "Desrespeito"]} respostas="31" visitas="625" />
               <Denuncia texto="Experimentei xenofobia ao tentar alugar um apartamento." nome="Hassan Mohamed" badges={["Xenofobia", "Discriminação"]} respostas="11" visitas="543" />
