@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Video from './pages/Video';
 import Tags from './pages/CriarDenuncia';
 import CriarDenuncia from './pages/CriarDenuncia';
+import VideoType from './pages/VideoType';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/denuncia' element={<Denuncia/>}/>
           <Route path='/tags' element={<Tags/>}/>
           <Route path='/videos' element={<Video/>}/>
+          <Route path='/videos/:userType' element={<VideoType/>}/>
           <Route path='/create_complaint' element={<CriarDenuncia/>}/>
         </Routes>
         <Footer/>

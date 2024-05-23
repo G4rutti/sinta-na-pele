@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Videos = ({episodio, tipo, tempo, descricao}) => {
     return (
@@ -12,7 +13,8 @@ const Videos = ({episodio, tipo, tempo, descricao}) => {
                     </strong>
 
                     <h3 className="mt-4 text-lg font-medium sm:text-xl">
-                        <a href="#" className="hover:underline"> {tipo} </a>
+
+                        <Link to={`/videos/${tipo}`} className="hover:underline"> {tipo} </Link>
                     </h3>
 
                     <p className="mt-1 text-sm text-gray-700">
