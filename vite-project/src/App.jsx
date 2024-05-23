@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import SignUp from './pages/SignUp';
 import Denuncia from './pages/Denuncia';
 import Footer from './components/Footer';
+import Video from './pages/Video';
+import Tags from './pages/CriarDenuncia';
 import CriarDenuncia from './pages/CriarDenuncia';
 
 function App() {
@@ -17,7 +19,8 @@ function App() {
           <Route path='/' element={<SignUp />}/>
           <Route path='/home' element={<Home />}/>
           <Route path='/denuncia' element={<Denuncia/>}/>
-          <Route path='/videos' element={<Home/>}/>
+          <Route path='/tags' element={<Tags/>}/>
+          <Route path='/videos' element={<Video/>}/>
           <Route path='/create_complaint' element={<CriarDenuncia/>}/>
         </Routes>
         <Footer/>
