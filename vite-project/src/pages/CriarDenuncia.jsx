@@ -16,7 +16,7 @@ const CriarDenuncia = () => {
                         <h1 className="text-center font-medium text-3xl uppercase">Faça sua denúncia</h1>
                         <div className="mx-auto">
                             <label htmlFor="Title" className="  flex flex-col justify-center items-center mt-10">
-                                <span className="text-xs font-medium text-gray-700 uppercase">Título da denuncia</span>
+                                <span className="text-xs font-medium text-gray-700 uppercase">Título da denúncia</span>
                                 <input
                                     type="text"
                                     id="Title"
@@ -26,7 +26,7 @@ const CriarDenuncia = () => {
                             </label>
                             <label htmlFor="OrderNotes" className="flex flex-col justify-center items-center mt-10">
                                 <span className="text-xs font-medium text-gray-700 uppercase">
-                                    Order notes</span>
+                                    DESCREVA SUA DENÚNCIA</span>
                                 <textarea
                                     id="OrderNotes"
                                     className="mt-2 w-[30vw] rounded-lg border border-gray-400 px-2 py-2 shadow sm:text-sm outline-none"
